@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JS TASK1</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: lightslategray;
+        }
+        h1{
+            color: rgb(0, 0, 0);
+            font-family: 'Times New Roman', Times, serif;
+        }
+        button{
+            padding: 10px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+        }
+        label{
+            color: rgb(0, 0, 0);
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1><U>Reversing the Number</U></Reversing></h1>
+    <label>Enter the Number:</label><br>
+    <input type="number" id="input" placeholder="Enter the Number" name="num"><br><br>
+    <button onclick="reverseNumber()">Reverse</button><br><br>
+    <label>Reverse of given Number:</label><br>
+    <input type="text" id="output" placeholder="Reverse of number is " name="output"><br><br>
+    <script>
+        function reverseNumber(){
+            var rev = document.getElementById("input");
+            var kal = rev.value;
+            var vas = kal.toString().split("").reverse().join("");
+            var sur = document.getElementById("output");
+            sur.value = vas;
+            }
+        </script>
+</body>
+</html>
